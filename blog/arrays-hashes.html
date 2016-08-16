@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html class="blog">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>A&H</title>
+</head>
+<body>
+<div class="top-div">
+	<nav>
+		<a href="../index.html">Home</a> |
+		<a href="../about.html">About</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../projects/index.html">Blogs</a>
+	</nav>
+	<a href="mailto:momonekata@gmail.com?" target="_top"><img src="mail.png"></a>
+</div>
+<header><h1 class="header1">Arrays and Hashes</h1></header>
+<div>
+</div>
+<div class="content6">
+<img class="pro-pic" src="moh.png"><p id="date">March 15, 2016</p>
+<section>
+<p>In most programming languages, there are two improtant concepts that are almost inevitable,
+they are arrays and hashes.</p>
+</section> 
+<section>
+<p>They might not be called the same in other languages but they sure intend to apply the same principles. In this blog we will talk about Ruby's Arrays and hashes. Let's open the fun with arrays. what are they? well in programming, we have often variables that store data, in other words, we have a place holder in which we save values. for instance, if we type: <pre>name = bob</pre><p>the variable is name here which is a place holder for bob, name points to bob as its value, we call this whole process a variable declaration, we declared the name and we assigned it "bob" as the value. Now what if we want a list of names rather than a single name, that's when arrays come in action. they are a list of ordered items, and every element can be accessed by its index. each elements is assigned an index respectively. the index starts by 0. If you have never programmed before you might think that if we try use our previous example, you will assume it to be like this:</p><pre>names = bob, will, jane</pre><p>That's ok I would have tought so, but in ruby, list items or element are inside of a pair a bracket so the correct way would be:</p><pre>names = [bob, will , jane]</pre><p>The first element which is bob will have the starting index 0, will at 1 and jane at 2, as I mentioned previously, when we want to access an element, we use its index. for example, if we need to access jane. we go like this:</p><pre>"puts names[2]</pre><p>put is what we use if we want to print something on the screen. and we need to type the name of the list followed by the index of the corresponding element we wish to access. we can also have arrays in arrays called dimensional arrays such as:</p><pre>arr = [[1,2],[34,6]]</pre>
+</section>
+<section>
+<p>Arrays are handy ways to come with quick list of things. The big question now is what if we just don't want a list but also information on elements of the list, that's when we welcome hashes. Unlike arrays, hashes are more like dictionaries with content and their meanings, and they are not represented by indexes and they don't follow an particular order, hashes are composed of sets of key, value pair .at first they can seem pretty confusing, but with little coding jumping jack they become friendly. As opposed to arrays hashes use curly braces instead of brackets. a simple hash syntax looks like this:</p><pre>qualities = {:bob => "smart", :will => "fun", :jane => "sweet"}</pre><p>In this case the first set of key value would be :bob as the key preceded by a colon and "smart" the value between quotes. it's also important to know that this is not the only way to represent a hash, we can also put both key and value between quotes:<p><pre>"bob" => "smart"</p></pre><p>Or there is even a new way which is the key followed by a colon:</p><pre>bob: "smart"</pre><p>Single or double quotes wouldn't make any difference. Another beauty of hashes is that you can also have hashes within hashes or list within hashes, for example;</p><pre>cars = {:nissan => {year => 2016, price = > 20000}, toyota=> {:model => camry, :year => 2014}}</pre>
+</section>
+</div>
+<script type="text/javascript" src="../stylesheets/blog.js"></script>
+</body>
+</html>

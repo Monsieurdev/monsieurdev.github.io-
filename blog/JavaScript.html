@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html class="blog">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>JavaScript</title>
+</head>
+<body>
+<div class="top-div">
+	<nav>
+		<a href="../index.html">Home</a> |
+		<a href="../about.html">About</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../projects/index.html">Blogs</a>
+	</nav>
+	<a href="mailto:momonekata@gmail.com?" target="_top"><img src="mail.png"></a>
+</div>
+<header><h1 class="header1">Ruby Hashes vs. Javacript Objects</h1></header>
+<div>
+</div>
+<div class="content6">
+<img class="pro-pic" src="moh.png"><p id="date">April 8, 2016</p>
+<section>
+<p>If you are a Ruby programmer, and decide to start learning JavaScript, you’ll see a lot of similarities, among them Objects and hashes are great examples to showcase these similarities. However they do differ in many ways too. So without further due let’s illustrate.</p>
+</section>
+<section>
+<p>First thing first off, both Hashes and Objects are created using curly braces:</p>
+</section>
+<pre>
+hash ={}            object = {};
+</pre>
+<section>
+<p>
+In the example above, both the hash and the Object are empty. In Ruby, hashes are composed of key value pairs, they are two main notations for key/value pairs, we have the rocket notation “=>” and the symbol notation with a colon “:” behold:
+</p>
+</section>
+<pre>
+hash = {
+	'name'=> 'John',
+	:job => 'lawyer'
+}
+</pre>
+<section>
+<p>We also have key/value situation with Objects, but they are just referred as properties, so Objects contain properties and their values. Unlike hashes, Objects don’t have the rocket notation; they only operate with the colon notation, and the properties cannot be symbols like in Ruby:</p>
+</section>
+<pre>
+object = {
+	name : 'John',
+	job : 'lawyer'
+};
+
+</pre>
+<section>
+<p>With hashes, you can only access keys using the bracket notation:</p>
+</section>
+<pre>
+	hash = {
+	'name'=> 'John',
+	:job => 'lawyer'
+}
+
+puts hash['name']  #=> John
+</pre>
+<section>
+<p>JavaScript gives two options, you could either use the bracket notation or the dot notation. Isn’t that awesome?</p>
+</section>
+<pre>
+	object = {
+	name : 'John',
+	job : 'lawyer'
+};
+
+console.log(object.name); #=> john
+console.log(object['job']); #=> lawyer
+</pre>
+<section>
+<p>Another similarity is, the nested principle applies to both. You can have hashes inside a hash as you can have objects inside an Object, you can also have arrays inside them:
+</p>
+<pre>
+hash = {                                     
+	'name'=> 'john',
+	:job => 'lawyer',
+	'wife' => {'name' => 'Lisa'},            
+	'kids' => ['Mary', 'Steve']
+}
+
+object = {
+	name : 'john',
+	job : 'lawyer',
+	wife : {'name' : 'Lisa'},
+	kids : ['Mary', 'Steve']
+};
+
+</pre>
+</div>
+<script type="text/javascript" src="../stylesheets/blog.js"></script>
+</body>
+</html>

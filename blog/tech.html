@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html class="blog">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>RegExp</title>
+</head>
+<body>
+<div class="top-div">
+	<nav>
+		<a href="../index.html">Home</a> |
+		<a href="../about.html">About</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../projects/index.html">Blogs</a>
+	</nav>
+	<a href="mailto:momonekata@gmail.com?" target="_top"><img src="mail.png"></a>
+</div>
+<header><h1 class="header1">Regular Expressions</h1></header>
+<div>
+</div>
+<div class="content6">
+<img class="pro-pic" src="moh.png"><p id="date">April 9, 2016</p>
+<section>
+<p>Today, we are going to talk about regular expressions. In the world of web development,
+when it comes to complex data with huge of string structures, you need to know your fair share of regular expressions, regular expressions are ways to manipulate strings in order to get a desired output. For example in Ruby:</p>
+</section>
+<pre>
+ puts "Max is so sad today!".sub('sad','happy')
+
+ Ouput:   "Max is so happy today!"
+</pre>
+<section>
+<p>
+As you can see we replaced the word sad with happy, However this is not great example of regular expressions. 
+They are usually inside a pair of forward slash "//" like so:
+</p>
+</section>
+<pre>
+"Hello string".scan(/./) {|s| puts s }
+
+Output:
+H
+e
+l
+l
+o
+ 
+s
+t
+r
+i
+n
+g
+</pre>
+<section>
+<p>The code above prints every character of the string, the "/./" stands for every character, you also noticed the method scan which is an enurable that is used with strings. it does exaclty what its name suggests. Now let's print every two
+ characters, as you may alreay guessed, we will use "/../" for every two characters.</p>
+</section>
+<pre>
+"Hello string".scan(/../) {|s| puts s }
+
+Output:
+He
+ll
+o 
+st
+ri
+ng
+</pre>
+<section>
+<p>The previous illustration prints everyting including spaces because they are accounted as characters also, so if we want to be handy, we can print the string nicely with no spaces.</p>
+</section>
+<pre>
+"Hello string".scan(/\w\w/) {|s| puts s }
+
+Ouput:
+He
+ll
+st
+ri
+ng
+</pre>
+<section>
+<p>The "/w" is a special character, it means any alphanumeric or underscore, there are many other special characthers such as "\d" for any digit, "\D" anything that is not a digit, "\s" for white space etc.
+Here is an example:</p>
+</section>
+<pre>
+"My birthday is on april 12th".scan(/\d/) do |d| puts d end
+
+Output:
+1
+2
+</pre>
+<section>
+<p>
+Now let's print just the letters.
+</p>
+</section>
+<pre>
+"My birthday is on april 12th".scan(/\D/) do |d| puts d end
+
+Ouput:
+b
+i
+r
+t
+h
+d
+a
+y
+ 
+i
+s
+ 
+o
+n
+ 
+a
+p
+r
+i
+l
+ 
+t
+h
+</pre>
+<section>
+<p>We can also use the match operator "=~" with regular expressions, let's say we want to print only the vowels in a given string. whe can do this:</p>
+</section>
+<pre>
+"Please take my vowels".scan(/./) {|c| puts c if c =~ /[aeiou]/}
+
+Ouput:
+e
+a
+e
+a
+e
+o
+e
+</pre>
+<section>
+<p>The scan method will pass every character to the code block then they are checked by the match operator to see if they are vowels "/[aeiou]/". We can even do this a nicer way the with the match method.</p>
+</section>
+<pre>"Please take my vowels".scan(/./) {|c| puts c if c.match(/[aeiou]/)}
+
+Ouput:
+e
+a
+e
+a
+e
+o
+e</pre>
+<section>
+<p>Lastly, Ranges can also be used to extract a specific target range.</p>
+</section>
+<pre>
+"Ruby is fun!".each_char {|d| puts d if d =~ /[a-f]/}
+
+Output:
+b
+f
+</pre>
+<section>
+<p>This was an introduction to Regular expressions, there is so much more about them that it is a branch of computer science, you will become a more successull web developer if you could get a solid foundaton on regular expressions.
+</p>
+</section>
+</div>
+<script type="text/javascript" src="../stylesheets/blog.js"></script>
+</body>
+</html>

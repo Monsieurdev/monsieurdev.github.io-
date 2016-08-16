@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html class="blog">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>Ruby Classes</title>
+</head>
+<body>
+<div class="top-div">
+	<nav>
+		<a href="../index.html">Home</a> |
+		<a href="../about.html">About</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../projects/index.html">Blogs</a>
+	</nav>
+	<a href="mailto:momonekata@gmail.com?" target="_top"><img src="mail.png"></a>
+</div>
+<header><h1 class="header1">Ruby Classes</h1></header>
+<div>
+</div>
+<div class="content6">
+<img class="pro-pic" src="moh.png"><p id="date">March 15, 2016</p>
+<section>
+<p>Today, we are going to touch ruby classes. What they? Well, they are like blueprints for making objects, a sort of cookie cutter if I may say. In your code you define classes in the intent to create objects that have the same characteristics. For example; to be able to illustrate that let’s refer on real world object which will be the Army here that recruits and trains individual to be come soldiers which are the objects in this case. First let’s define our class:</p>
+</section>
+<pre>
+	class Army 
+	end
+</pre> 
+<section>
+<p>No we have defined our Army class, it’s time to build up, and we think in terms of the objects, what are the characteristics of a soldier, they have a name of course, age, a rank to start and many others things, but in this blog, we will just use name and rank, now we know the details about our soldier object, we can initialize those information with the initialize method:</p>
+</section>
+<pre>
+	class Army 
+	  
+	  def initialize(name,rank)
+	
+	end
+</pre>
+<section>
+<p>Let’s keep on, now we have values, we need variables to hold our name and rank values, but what type of variables? Instance variables, they are one of the best features in ruby classes. One great benefit of instance variables is, unlike local variables they can be used in any method within a class, they are preceded with the @ sign. Let’s put them to work:</p>
+</section>
+<pre>
+	class Army 
+		
+	  def initialize(name,rank)
+	  @name = name
+	  @rank = rank
+	end
+</pre>
+<section>
+<p>Our class is fully initialized with all the details we need for the soldier object, for the program to be able to read these information we have to define methods to do that:</p>
+</section>
+<pre>
+	class Army 
+		
+	  def initialize(name,rank)
+		@name = name
+		@rank = rank
+	  end
+
+	  def name
+		puts @name
+	  end
+
+	  def rank
+		puts @rank
+	  end
+	end
+</pre>
+<section>
+<p>Awesome, the program can read now, note that there other ways of doing this and we can also use a method that update the values. But we’ll just stick to a reading method here. Now it's time to recruit and train a soldier:</p>
+</section>
+<pre>Soldier = Army.new(“Fred”,8)</pre>
+<section>
+<p>The line above creates a new soldier objects with name and rank. Let’s print the name of the soldier</p>
+</section>
+<pre>member.name #=> Fred</pre>
+<section>
+<p>Fred is in the army now for quite some time, he even did a tour in Iraq; Let’s check if his rank has changed, we will define an instance method to do so, an instance method is any method that we can call on an object. So our reader method is also an instance method:</p>
+<pre>
+	class Army 
+	  
+	  def initialize(name,rank)
+		@name = name
+		@rank = rank
+	end
+
+	  def name
+		puts @name
+	  end
+
+	  def rank
+		puts @rank
+	  end
+
+	  def status
+		if @rank &lt; 10 
+			puts "Recruit"
+		else
+			puts "Captain"
+	    end
+	  end
+	end
+</pre>
+<pre>Soldier = Army.new(“Fred”,8)</pre>
+<pre>member.name #=> Fred</pre>
+<pre>soldier.status #=> Recruit</pre>
+</section>
+<p>We used the instance method on the soldier object to check his rank; despite a tour in Iraq Fred is still a recruit.</p>
+</div>
+<script type="text/javascript" src="../stylesheets/blog.js"></script>
+</body>
+</html>

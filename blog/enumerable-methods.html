@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html class="blog">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<title>Group By</title>
+</head>
+<body>
+<div class="top-div">
+	<nav>
+		<a href="../index.html">Home</a> |
+		<a href="../about.html">About</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../projects/index.html">Blogs</a>
+	</nav>
+	<a href="mailto:momonekata@gmail.com?" target="_top"><img src="mail.png"></a>
+</div>
+<header><h1 class="header1">Ruby Enumerable Group_by</h1></header>
+<div class="content6">
+<img class="pro-pic" src="moh.png"><p id="date">March 26, 2016</p>
+<section>
+<p> In Ruby, there are some handy Enumerable methods that can do awesome things, so today I am going to give you a taste of the "group_by" Enumerable. When this method is used on a collection or list without a given block, an Enumerator is returned like this:</p>
+ </section>
+ <img class="gr" src="ex1.png">
+<section>
+<p>If block is given, the code block will return a hash that contains keys which are the evaluated result of the block and the values as arrays of elements that points to their corresponding keys. 
+ Here is how it works:</p>
+</p></section>
+<img class="gr" src="ex2.png">
+<section>
+<p>If you need the result back in arrays, you could just convert it with the method "to_h " like in the example below:</p>
+</section>
+<img class="gr" src="ex3.png">
+<section>
+<p>Here is an example where numbers divisible by 3 will have a boolean result as their key:</p>
+</section>
+<img class="gr" src="ex4.png">
+<section>
+<p>Another example that groups Ruby objects by their class types:</p>
+</section>
+<img class="gr" src="ex5.png">
+<section>
+<p>These were a simple demonstrations of the Enumerable method "Group_by", this concept might seem a little confusing at first but as you take a dive in you will see that it is Straightforward and useful.</p>
+</section>
+<script type="text/javascript" src="../stylesheets/blog.js"></script>
+</div>
+</body>
+</html>

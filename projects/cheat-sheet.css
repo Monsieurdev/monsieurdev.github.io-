@@ -1,0 +1,105 @@
+
+.sheet-title {
+	position: absolute;
+	top: -20px;
+}
+
+.head-c {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	 
+}
+
+.rb-container {
+	width: 35%;
+	height: 600px;
+	background-color: #cccccc;
+	position: relative;
+	top: 80px;
+	left: 10%;
+	display: inline-block;
+}
+
+.js-container {
+	width: 35%;
+	height: 600px;
+	background-color: #cccccc;
+    position:relative;
+	top: 80px;
+    left: 15%;
+    display: inline-block;
+}
+
+.inner {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	border-bottom: double; black;
+	background: #7f92a7;
+}
+h2 {
+	text-align: center;
+	font-family: copperplate;
+}
+
+.split {
+	top: 60px;
+	position:absolute;
+	font-family: copperplate;
+	text-align: center;
+	left: 0%;
+	background: #66baff;
+	width: 100%;
+	height: 30px;
+	padding-top: 15px;
+}
+
+.join {
+	top: 188px;
+	position:absolute;
+	font-family: copperplate;
+	text-align: center;
+	left: 0%;
+	background: #66baff;
+	width: 100%;
+	height: 30px;
+	padding-top: 15px;
+}
+.for {
+	top: 295px;
+	position:absolute;
+	font-family: copperplate;
+	text-align: center;
+	left: 0%;
+	background: #66baff;
+	width: 100%;
+	height: 30px;
+	padding-top: 15px;
+}
+
+.pre-split {
+	position: absolute;
+	top: 110px;
+	width: 100%;
+	padding-top: 5px;
+/*	font-size: 15px;*/
+
+}
+.pre-join {
+	position: absolute;
+	top: 238px;
+	width: 100%;
+	padding-top: 5px;
+/*	font-size: 15px;*/
+}
+.pre-for {
+	position: absolute;
+	top: 350px;
+	width: 100%;
+	padding-top: 5px;
+/*	font-size: 15px;*/
+}

@@ -1,0 +1,454 @@
+html {
+	background: #E7F1FA;
+}
+body {
+	padding-bottom: 520px;
+	position: relative;
+	margin: auto;
+
+}
+
+.top {
+	position:relative;
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 0;
+	background: #000f13;
+}
+
+.mess p {
+	position: relative;
+	top: 100px;
+	font-size: 25px;
+	text-align: center;
+	font-family: copperplate;
+}
+span {
+	font-size: 50px;
+	font-weight: bolder;
+}
+.buttons a:link {
+	color: black;
+}
+.buttons a:visited {
+	color: purple;
+}
+.buttons div:hover {
+	background-color: #8f969f;
+}
+
+.nav-bar:active {
+	top: 3px;
+}
+
+.blogs {
+	text-decoration: none;
+	padding-top: 22px;
+	padding-left: 22px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+    
+}
+.projects {
+	text-decoration: none;
+	padding-top: 22px;
+	padding-left: 13px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+
+}
+
+.about-me {
+    text-decoration: none;
+	padding-top: 22px;
+	padding-left: 13px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+
+}
+
+.resume {
+	text-decoration: none;
+	padding-top: 22px;
+	padding-left: 19px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+
+}
+.head {
+	width: 100%;
+}
+header h1 {
+	text-align: center;
+	font-family: copperplate;
+}
+.buttons {
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	left: 0;
+
+}
+
+.nav-bar {
+	border-radius: 80%;
+    width: 100px;
+    height: 100px;
+	margin:15px;
+    display: inline-block;
+    background: #ffffff;
+    position: relative;
+    margin-top: 150px;
+
+}
+
+.foot {
+	position: absolute;
+	background: #000f13;
+    right: 0;
+    height: 200px;
+    bottom: 0;
+ 	left: 0;
+    text-align: center;
+}
+
+.nav p {
+	text-align: center;
+}
+
+.facebook {
+	top: 20px;
+    border-radius: 100%;
+}
+.twitter {
+	top: 20px;
+	border-radius: 100%;
+}
+.linkedin {
+	top: 20px;
+	border-radius: 100%;
+}
+.mail {
+ 	top: 19px;
+ 	height: 15px;
+ 	width: 22px;
+}
+.github {
+	top: 24px;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+nav img {
+   width: 28px;
+   height: 28px;
+   margin: 1px;
+   position: relative;
+}
+footer p {
+	color: white;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 40px;
+	font-family: 'copperplate';
+}
+
+/*the CSS below is for my Blog list page 
+///////////////////////////////////////
+//////////////////////////////////////*/
+.b-list-header {
+	position: relative;
+	top: -15px;
+	left: 5px;
+    font-family: 'copperplate';
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.b-list-body {
+	padding-bottom: 500px;
+	position: relative;
+	margin: auto;
+}
+
+.blog-list-container {
+	position: relative;
+	top: 50px;
+	width: 100px;
+	margin: auto;
+
+}
+
+.main {
+	background: url('../cod.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-1 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+}
+.blog-2 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.blog-3 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.blog-4 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.blog-5 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.blog-6 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.blog-7 {
+	height: 45px;
+	width: 109px;
+	background: white;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.blog-1 p {
+	text-decoration: none;
+	padding-left: 39px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+
+}
+.blog-2 p {
+	text-decoration: none;
+	padding-left: 15px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+}
+.blog-3 p {
+	text-decoration: none;
+	padding-left: 27px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+}
+.blog-4 p {
+	text-decoration: none;
+	padding-left: 17px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+}
+
+.blog-5 p {
+	text-decoration: none;
+	padding-left: 17px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+	text-align: center;
+	top: -8px;
+}
+.blog-6 p {
+	text-decoration: none;
+	padding-left: 13px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+	text-align: center;
+	top: -8px;
+}
+
+.blog-7 p {
+	text-decoration: none;
+	padding-left: 20px;
+	font-size: 16px;
+	position: absolute;
+	font-family: copperplate;
+	font-weight: bold;
+}
+
+.blog-list-container a:link {
+	color: black;
+}
+.blog-list-container a:visited {
+	color: purple;
+}
+.blog-list-container div:hover {
+	background-color: #8f969f;
+}
+.blog-list-container  div:active {
+	top: 3px;
+}
+.home {
+  height: 30px;
+  width: 30px;
+  left: 60%;
+  position: relative;
+  top: 0;
+  border-radius: 100%;
+}
+/*About me CSS below
+///////////////////
+//////////////////*/
+h1 {
+	text-align: center;
+}
+.about-content {
+  position: relative;
+/*  height: auto;*/
+  width: 40%;
+  background: #ffffff;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  top: 100px;
+  z-index: -1;
+
+}
+.about-content p {
+  margin-top: 50px;
+}
+
+.about-top {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  background: #000f13;
+}
+.about-top nav {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+  font-family: copperplate;
+}
+.about-top a:link {
+  color: white;
+  text-decoration: none;
+}
+.about-top a:visited {
+  color: white;
+}
+
+.about-top a:hover {
+  color: #8ee0ff;
+}
+
+.about-top img {
+  position: relative;
+  left: 90%;
+  top: 15px;
+  width: 20px;
+  height: 15px;
+}
+
+/*Projects css below////
+////////////////////*/
+
+.p-home {
+	height: 25px;
+  	width: 25px;
+  	margin-left: 30%;
+  	position: absolute;
+  	margin-top: -78px;
+}
+.parkpic {
+	width: 300px;
+	height: 300px;
+
+}
+.awg {
+	width: 300px;
+	height: 300px;
+
+}
+.cont {
+	text-align: center;
+}
+.project-container h1 {
+	position: relative;
+	top: 50px;
+}
+
+figure {
+	position: relative;
+	display: inline-block;
+	top: 100px;
+}
+figcaption {
+	text-align: center;
+	font-family: copperplate;
+}
+@media screen and (max-width: 1200px) {
+
+   .about-content {
+    height: auto;
+    width: 70%;
+  }
+  .about-top {
+  	height: 60px;
+  }
+
+}
+
